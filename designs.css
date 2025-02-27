@@ -3,6 +3,8 @@
     src: url('PressStart2P-Regular.ttf') format('truetype');
  
  }
+
+/*title*/
  h1 {
      justify-content: center;  
      display: flex;
@@ -10,7 +12,7 @@
      font-size: 40px;
  }
  
- 
+ /*navigation box*/
  .navigation {
      transform: scale(0.85);
      display: flex;
@@ -27,7 +29,7 @@
      margin: auto;
      bottom: 5%;
  }
- 
+ /*navigation buttons*/
  .navigation a {
      transform: scale(0.85);
      text-decoration: none;
@@ -47,6 +49,7 @@
      margin:auto;
      
  }
+ /*????*/
  .tilttext {
      display: inline-block;
      transform: rotate(340deg);
@@ -58,6 +61,7 @@
      z-index: 1;
      bottom: 0.05%;
  }
+
  .title {
      font-family: Arial, Helvetica, sans-serif;
      text-align: center;
