@@ -52,11 +52,6 @@ header{
     transform: scale(1.2);
     color: #C13584; /* Slightly darker shade on hover */
 }
-/* TITLE OF MAIN FEED*/
-.mainBodyHeader 
-{
-    font-family: 'CustomFont1', sans-serif;
-}
 
 
 /* MAIN FEED */
@@ -66,79 +61,58 @@ header{
     border: 10px ridge #ffe898;
     border-radius: 25px;
     background-color: #cad1ec;
-    width: 40%;
+    width: 50%;
     text-align: center;
     margin: auto;
     height: 1000px;
 }
 
 
-/* MAIN FEED TEXT BUBBLE*/
-.mainBody 
-{
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 20px;
-    margin: 20px;
-    padding: 10px;
-   
-    color: black;
-    font-size: 18px;
-    border: 5px solid #9ba6cf;
-    border-radius: 5px;
-    background-color: #f2f8ff;
-   
-}
-
-/* SERVICES HEADER*/
-.Servicesheader 
-{
-    font-family: 'CustomFont1', sans-serif;
-}
-
-/* SERVICES TEXT BUBBLE*/
-.Servicesbody {
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 20px;
-    margin: 20px;
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    border: 5px solid #9ba6cf;
-    border-radius: 5px;
-    background-color: #f2f8ff;
-}
-
 /* REVIEWS HEADER*/
 .Reviewsheader 
 {
     font-family: 'CustomFont1', sans-serif;
+    margin-top: 5%;
 }
-
-/* REVIEWS TEXT BUBBLE (? ADD A GRID FOR REVIEWS OR EMBED A SLIDING REVIEW TAB IDK) */
-.Reviewsbody 
-{
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 20px;
-    margin: 20px;
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    border: 5px solid #9ba6cf;
-    border-radius: 5px;
-    background-color: #f2f8ff;
+.navigaton-box{
+    padding:20px;
+}
+.first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 .booking-header 
 {
     font-family: 'CustomFont1', sans-serif;
     text-align: center;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 200px;
+    border: 10px ridge #ffe898;
+    border-radius: 15px;
+}
+
+.booking-btn{
+    background-color: white;
+    text-align: center;
+}
+.nav-img{
+    display: block;
+     margin:auto;
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     cursor: pointer;
+     transition: transform 0.3s ease;
 }
 .second-row{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    padding: 50px;
 }
 /* SIDE NAVIGATION */
 .link {
@@ -203,7 +177,12 @@ a
 
 /* IMAGE FORMATTING*/
 .imagegroup1 {gap: 15px;}
-.imagegroup1 {display: grid; position: relative; left: 75%; bottom: 134%; width: fit-content;}
+.imagegroup1 {
+    display: grid; 
+    position: relative; 
+    left: 85%; 
+    bottom: 134%; 
+    width: fit-content;}
 
 .nail 
 {
