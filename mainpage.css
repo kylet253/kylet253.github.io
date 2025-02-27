@@ -12,8 +12,6 @@
 body
 {
     transform: scale(0.85);
-
-
 }
 
 /*TITLE OF THE WEBSITE*/
@@ -32,7 +30,17 @@ header {
     font-family: 'CustomFont1';
 }
 
-
+/* Instagram Icon */
+.instagram-icon {
+    font-size: 50px; /* Increase icon size */
+    color: #E1306C; /* Instagram's signature pink */
+    transition: transform 0.2s, color 0.2s;
+    cursor: pointer;
+}
+.instagram-icon:hover {
+    transform: scale(1.2);
+    color: #C13584; /* Slightly darker shade on hover */
+}
 /* TITLE OF MAIN FEED*/
 .mainBodyHeader 
 {
