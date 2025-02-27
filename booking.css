@@ -61,3 +61,57 @@ h1 {justify-content: center;  display: flex;
     text-align: center;
     white-space: nowrap;
     }
+
+
+aside {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 50vh; /* Takes full viewport height */
+}
+
+.booking-container {
+    background: white;
+    padding: 20px; /* Consistent padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Adjust width if needed */
+    text-align: center;
+}
+
+.booking-container input, 
+.booking-container button, 
+.booking-container label {
+    width: calc(100% - 20px); /* Ensures equal left-right padding */
+    margin: 5px auto; /* Centers the elements */
+    display: block;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+
+    }
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    }
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+
+    }
+
+    button:hover {
+    background-color: #218838;
+    }
