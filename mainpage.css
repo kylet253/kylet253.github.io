@@ -40,7 +40,7 @@ header{
 /* Instagram Icon */
 
 .instagram-icon {
-    font-size: 100px; /* Increase icon size */
+    font-size: 80px; /* Increase icon size */
     color: #E1306C; /* Instagram's signature pink */
     transition: transform 0.2s, color 0.2s;
     cursor: pointer;
