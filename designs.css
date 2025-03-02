@@ -1,161 +1,404 @@
 @font-face {
     font-family: 'CustomFont1';
     src: url('PressStart2P-Regular.ttf') format('truetype');
- 
- }
+}
+body
+{
+    overflow-x: hidden;
+    background-image: url('mainwebsite-backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: auto;
+    background-attachment: fixed;
+}
+/* White Container - Now Starts from the Top & Expands Naturally */
+.container {
+    background-color: white;
+    width: 1100px;
+    padding: 0px 20px;
+    margin: 0px auto;
+    max-width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    border: 1px solid #ffb6c1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+/*website banner*/
+.header {
+    width: 1100px;
+    height: 205px;
+    background-image: url('untitled_design_4.jpg');
+    margin: 0 auto;
+}
 
-/*title*/
- h1 {
-     justify-content: center;  
-     display: flex;
-     align-items: center; 
-     font-size: 40px;
- }
- 
- /*navigation box*/
- .navigation {
-     transform: scale(0.85);
-     display: flex;
-     flex-direction: row;
-     border: 10px ridge #ffe898;
-     border-radius: 10px;
-     background-color: #cad1ec;
-     position: relative;
-     width: 700px;
-     height: fit-content;
-     padding-left: 20px;
-     padding-right: 20px;
-     justify-content: center;
-     margin: auto;
-     bottom: 5%;
- }
- /*navigation buttons*/
- .navigation a {
-     transform: scale(0.85);
-     text-decoration: none;
-     font-family: 'CustomFont1', sans-serif;
-     display: block;
-     width: 70%;
-     padding: 15px;
-     margin: 10px 0;
-     text-align: center;
-     color: black;
-     font-size: 16px;
-     border: 5px solid #9ba6cf;
-     border-radius: 5px;
-     background-color: #f2f8ff;
-     text-align: center;
-     white-space: nowrap;
-     margin:auto;
-     
- }
- /*????*/
- .tilttext {
-     display: inline-block;
-     transform: rotate(340deg);
-     color: deeppink;
-     font-weight: bold;
-     font-family: 'CustomFont1', sans-serif;
-     position: relative;
-     left: 30.5%;
-     z-index: 1;
-     bottom: 0.05%;
- }
-
- .title {
-     font-family: Arial, Helvetica, sans-serif;
-     text-align: center;
-     width: 10%;
-     margin: auto;
-     padding: 30px;
-     color: black;
-     font-size: 25px;
-     border: 10px ridge #ffe898;
-     border-radius: 25px;
-     margin-bottom: 50px;
-     margin-top: 25px;
-     font-family: 'CustomFont1';
-     background-color: #cad1ec;
- }
- 
- 
- body {margin: 0; padding: 0;}
- 
- .close-btn {
-     position: absolute;
-     top: 20px;
-     right: 30px;
-     font-size: 30px;
-     color: white;
-     cursor: pointer;
-     background: rgba(0, 0, 0, 0.6);
-     padding: 5px 10px;
-     border-radius: 5px;
-     transition: 0.3s;
- }
- 
- .close-btn:hover {
-     background: rgba(255, 0, 0, 0.8);
- }
- 
- 
- .gallery {
-     background-color: #cad1ec;
-     margin: 2% 5% 2% 5%;
-     padding: 30px;
-     display: flex;
-     gap: 10px;
-     flex-wrap: wrap;
-     justify-content: center;
-     border: 10px ridge #ffe898;
-     border-radius: 25px;
+.left-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+/*updates box*/
+.updates {
+  
+    height: 200px;
+    background-color: white;
+    background-image: url('side_backs.jpg');
+    width: 210px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
     
- }
- .gallery-item{
-     text-align: center;
-     width:400px;
-     margin: 5px;
-     border: 5px solid #9ba6cf;
-     border-radius: 5px;
-     overflow: hidden;
- }
- .gallery-img {
-     display: block;
-     margin:auto;
-     width: 400px;
-     height: 450px;
-     object-fit: cover;
-     cursor: pointer;
-     transition: transform 0.3s ease;
-     
-     
- }
- .description{
-     font-family: 'CustomFont1', sans-serif;
-     width: 100%;
-     height: auto;
-     text-align: left;
-     font-size: 12px;
-     background-color: white;
-     padding: 10px;
- }
- .gallery-img:hover {
-     transform: scale(1.1);
- }
- 
- .lightbox {
-     display: none;
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: rgba(0, 0, 0, 0.8);
-     justify-content: center;
-     align-items: center;
- }
- 
- .lightbox-img {
-     max-width: 90%;
-     max-height: 90%;
-     border-radius: 10px;}
+    
+}
+/*updates box title*/
+.updates-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    color: #744987;
+}
+    /*directory box*/
+.directory {
+    background-image: url('side_backs.jpg');
+    height: 150px;
+    background-color: white;
+    width: 210px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*directory box title*/
+.directory-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    color: #744987;
+}
+
+/*navigation buttons*/
+a {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 13px;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #AA86BA;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-left: 30px;
+    text-decoration: none;
+    background-image: linear-gradient(#faedd9,#fae0b9 );
+    color: black;
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*main box */
+.main {
+    background-color: white;
+    margin: auto;
+    padding-top: 0px;
+    border-color: #AA86BA;
+    border-style: solid;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*misc box*/
+.misc {
+    background-image: url('side_backs.jpg');
+    height: 150px;
+    background-color: white;
+    width: 210px;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    margin-left: 0px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*misc box title*/
+.misc-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    color: #744987;
+}
+
+/*music box*/
+.music {
+    background-image: url(side_backs.jpg);
+    background-color: white;
+    border-width: 1px;
+    border-color: #AA86BA;
+    border-style: solid;
+    box-shadow: 2px 2px 8px #dedede;
+    outline-style: solid;
+    outline-color: #fce3f9;
+    outline-width: 5px;
+    width: 210px;
+    height: fit-content;
+}
+/*music box title*/
+.music-text {
+    font-family: 'CustomFont1';
+    font-size: 10px;
+    text-align: center;
+    margin-top: -40px;
+    color: #744987;
+}
+
+/*audio stuff*/
+audio {
+    border: 0.5px solid #AA86BA;
+    border-radius: 30px;
+    width: 210px;
+    margin-top: 7px;
+    box-shadow: 2px 2px 8px #dedede;
+}
+audio::-webkit-media-controls-panel {
+    background-image: linear-gradient(#faedd9,#fae0b9);
+   
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color:#fcd4dc;
+    border-radius: 50%;
+}
+
+    audio::-webkit-media-controls-play-button:hover {
+        background-color: #EEBDE9;
+    }
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: black;
+    ;
+}
+
+/*the gif in the music box*/
+.music-image {
+    margin-top: 3px;
+    margin-left: -5px;
+    width: 210px;
+    height: 210px;
+    border: 5px solid #fcd4dc;
+    outline-color: #ffb6c1;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+
+.box main {
+    top: 0;
+    text-align: center;
+}
+
+/*subheaders*/
+h3 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#fcedf1, #fcd4dc);
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*the gif star border*/
+#topborder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    overflow: hidden;   
+}
+/*mainfeed header*/
+h4 {
+    border: 0px solid pink;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 578px;
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#faf0fc, #EEBDE9);
+    box-shadow: 2px 2px 8px #dedede;
+}
+
+/*this is the header text in pink*/
+h2 {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    color: #c4549d;
+}
+
+/*this is the body text and updates text*/
+p {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 32px;
+    font-family: 'CustomFont1', sans-serif;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Navigation Buttons */
+.navigation a {
+    text-decoration: none;
+    font-family: 'CustomFont1', sans-serif;
+    color: black;
+    font-size: 16px;
+    background-color: #cad1ec;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Hover effect for navigation */
+.navigation a:hover {
+    background-color: #9ba6cf;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+/* Individual Gallery Items */
+.gallery-item {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Image Pops Out */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Description Text */
+.description {
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 12px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Lightbox for Enlarged Images */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lightbox Image */
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Close Button for Lightbox */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Close Button Hover Effect */
+.close-btn:hover {
+    background: rgba(255, 0, 0, 0.8);
+}

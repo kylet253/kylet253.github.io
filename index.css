@@ -2,9 +2,16 @@
     font-family: 'CustomFont1';
     src: url('PressStart2P-Regular.ttf') format('truetype');
 }
+/* website background image */
 body
 {
     overflow-x: hidden;
+    background-image: url('mainwebsite-backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 700px;
+    background-attachment: fixed;
 }
 /*the entirety of the content*/
 .container {
@@ -21,17 +28,12 @@ body
     border: 1px solid #ffb6c1;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    
 }
 
 /*website banner*/
 .header {
-    
     height: 205px;
     background-image: url('untitled_design_4.jpg');
-    
-    
-    
 }
 /*updates box*/
 .updates {
