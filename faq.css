@@ -1,0 +1,142 @@
+/* IMPORT FONT */
+@font-face {
+  font-family: "CustomFont1"; 
+  src: url("PressStart2P-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "CustomFont1", sans-serif;
+}
+
+/* BACKGROUND IMAGE */
+body {
+  background: url("project-backdrop.jpg") no-repeat center center fixed;
+  background-size: cover; 
+}
+
+/* WHITE BOX TO WRAP AROUND FEATURES ON PAGE */
+.content-container {
+  max-width: 800px; 
+  margin: 50px auto; 
+  background: white; 
+  padding: 30px; 
+  border-radius: 12px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  opacity: 0.95; 
+}
+
+/* TITLE CENTERING */
+.wrapper {
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+/* NAVIGATION BUTTONS START HERE */
+.home-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+/* NAVIGATION BUTTON STYLING */
+.nav-button {
+  display: inline-block;
+background: linear-gradient(45deg, #feffd9, #ffefbf);
+  color: black;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: normal;
+  border: none;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* HOVERING FUNCTION AND STYLE */
+.nav-button:hover {
+  background-color: #ff1493; 
+}
+
+/* FAQ SECTION STARTS HERE */
+.faq-container {
+  max-width: 600px; 
+  margin: 20px auto;
+}
+
+/* STYLING FOR EACH QUESTION BOX */
+.faq {
+  width: 100%;
+  border: 1px solid rgba(251, 251, 204, 1);
+  margin: 10px auto;
+  border-radius: 8px; 
+  overflow: hidden;
+  background-color: white;
+}
+
+/* DROP DOWN BOX FUNCTION AND STYLING */
+.accordion {
+  width: 100%;
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: normal;
+  border-radius: 8px; 
+  position: relative;
+  text-align: left;
+}
+
+/* GIF INSERT FOR ICONS NEXT TO QUESTIONS */
+.accordion::after {
+  content: "";
+  background: url("heartmessagebuton.gif") no-repeat center center;
+  background-size: contain;
+  width: 30px;  
+  height: 30px;   display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* FLIP ANIMATION ON GIF ICON WHEN CLICKED */
+.accordion.active::after {
+  transform: rotate(180deg);
+}
+
+
+.active,
+.accordion:hover {
+  background-color: #fcdced;
+}
+
+/* CONTENT IN DROPDOWN PANEL */
+.panel {
+  padding: 1rem;
+  background-color: #fcdced;
+  display: none;
+  border-radius: 0 0 8px 8px; 
+}
+
+.panel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}

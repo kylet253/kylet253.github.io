@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="faq.css" />
+  </head>
+  <body>
+
+
+
+<!-- MAIN CONTENT CONTAINER -->
+
+    <div class="content-container">
+
+
+<!-- TITLE -->
+      <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+
+<!-- NAVIGATION BUTTONS -->
+      <div class="home-button-container">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="booking.html" class="nav-button">Booking</a>
+        <a href="designs.html" class="nav-button">Designs</a>
+      </div>
+
+<!-- FAQ STARTS HERE -->
+      <div class="faq-container">
+
+
+<!-- FAQ HEAD 1 -->
+        <div class="faq">
+          <button class="accordion">What is the best way to contact you?</button>
+          <div class="panel">
+            <p>Reaching me through my Instagram page (linked on the website front homepage) is the best way! Feel free to send me a message.</p>
+          </div>
+        </div>
+
+<!-- FAQ HEAD 2 -->
+        <div class="faq">
+          <button class="accordion">Question 2</button>
+          <div class="panel">
+            <p>Insert here</p>
+          </div>
+        </div>
+
+<!-- FAQ HEAD 3 -->
+        <div class="faq">
+          <button class="accordion">Question 3</button>
+          <div class="panel">
+            <p>Insert here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- JAVASCRIPT FOR DROP DOWN FUNCTION -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
