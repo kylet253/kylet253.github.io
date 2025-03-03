@@ -14,14 +14,17 @@ body
 }
 /* White Container - Now Starts from the Top & Expands Naturally */
 .container {
+    width: 1108px;
+    height: 1110px;
+    margin: auto;
+    gap: 20px;
+    border: 7px solid #fce3f9;
     background-color: white;
-    width: 1100px;
-    margin: 0px auto;
-    max-width: 80%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
+    overflow: hidden;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #AA86BA;
+    margin-top: 37px;
 }
 .box {
     border: 1px solid #ffb6c1;
@@ -38,6 +41,8 @@ body
     background-image: url('Untitled_design_4.jpg');
     margin: 13px auto;
     margin-bottom: auto;
+    margin-top: 0px;
+   
 }
 
 .left-container{
@@ -45,39 +50,14 @@ body
     flex-direction: column;
     width: fit-content;
 }
-/*updates box*/
-.updates {
-  
-    height: 200px;
-    background-color: white;
-    background-image: url('side_backs.jpg');
-    width: 210px;
-    border-width: 1px;
-    border-color: #AA86BA;
-    border-style: solid;
-    margin-left: 0px;
-    margin-top: 5px;
-    box-shadow: 2px 2px 8px #dedede;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 5px;
-    
-    
-}
-/*updates box title*/
-.updates-text {
-    font-family: 'CustomFont1';
-    font-size: 10px;
-    text-align: center;
-    margin-top: -40px;
-    color: #744987;
-}
+
+
     /*directory box*/
 .directory {
     background-image: url('side_backs.jpg');
     height: 150px;
     background-color: white;
-    width: 210px;
+    width: 230px;
     border-width: 1px;
     border-color: #AA86BA;
     border-style: solid;
@@ -89,6 +69,7 @@ body
     outline-width: 5px;
     display: flex;
     flex-direction: column;
+    margin-left: 3px;
 }
 
 /*directory box title*/
@@ -125,7 +106,7 @@ a {
 /*main box */
 .main {
     background-color: white;
-    margin: 5px 5px 10px 10px;    
+    margin: 5px 5px 10px 10px;
     padding-top: 0px;
     border-color: #AA86BA;
     border-style: solid;
@@ -133,9 +114,13 @@ a {
     outline-style: solid;
     outline-color: #fce3f9;
     outline-width: 5px;
-    width: 100%;
+    width: 780px;
     display: flex;
     flex-direction: column;
+    background-image: url("gallerybg.png");
+    position:relative;
+    margin-left: 283px;
+    margin-top: -192px;
 }
 .title{
     font-family: 'CustomFont1', sans-serif;
@@ -151,24 +136,6 @@ a {
     margin: 20px auto;
 }
 
-/*misc box*/
-.misc {
-    background-image: url('side_backs.jpg');
-    height: 150px;
-    background-color: white;
-    width: 210px;
-    border-width: 1px;
-    border-color: #AA86BA;
-    border-style: solid;
-    margin-left: 0px;
-    margin-top: 10px;
-    box-shadow: 2px 2px 8px #dedede;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 5px;
-    display: flex;
-    flex-direction: column;
-}
 
 /*misc box title*/
 .misc-text {
@@ -179,72 +146,12 @@ a {
     color: #744987;
 }
 
-/*music box*/
-.music {
-    background-image: url(side_backs.jpg);
-    background-color: white;
-    border-width: 1px;
-    border-color: #AA86BA;
-    border-style: solid;
-    box-shadow: 2px 2px 8px #dedede;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 5px;
-    width: 210px;
-    height: fit-content;
-}
-/*music box title*/
-.music-text {
-    font-family: 'CustomFont1';
-    font-size: 10px;
-    text-align: center;
-    margin-top: -40px;
-    color: #744987;
-}
-
-/*audio stuff*/
-audio {
-    border: 0.5px solid #AA86BA;
-    border-radius: 30px;
-    width: 210px;
-    margin-top: 7px;
-    box-shadow: 2px 2px 8px #dedede;
-}
-audio::-webkit-media-controls-panel {
-    background-image: linear-gradient(#faedd9,#fae0b9);
-   
-}
-
-audio::-webkit-media-controls-play-button {
-    background-color:#fcd4dc;
-    border-radius: 50%;
-}
-
-    audio::-webkit-media-controls-play-button:hover {
-        background-color: #EEBDE9;
-    }
-
-audio::-webkit-media-controls-time-remaining-display {
-    color: black;
-    ;
-}
-
-/*the gif in the music box*/
-.music-image {
-    margin-top: 3px;
-    margin-left: -5px;
-    width: 210px;
-    height: 210px;
-    border: 5px solid #fcd4dc;
-    outline-color: #ffb6c1;
-    outline-style: solid;
-    outline-width: 1px;
-}
 
 
 .box main {
     top: 0;
     text-align: center;
+    
 }
 
 /*subheaders*/
@@ -252,7 +159,7 @@ h3 {
     border: 0px solid pink;
     margin-top: -20px;
     margin-left: -20px;
-    width: 250px;
+    width: 270px;
     height: 30px;
     text-align: center;
     background-image: linear-gradient(#fcedf1, #fcd4dc);
@@ -304,17 +211,20 @@ p {
 
 /* Title */
 .title {
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 28px;
-    color: #c4549d;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 26px;
+    color: #633e73;
     text-align: center;
     background: linear-gradient(#fcedf1, #fcd4dc);
     padding: 10px 0;
-    border-radius: 10px;
-    width: 80%;
+    border-radius: 25px;
+    width: 20%;
     max-width: 600px;
     box-shadow: 2px 2px 8px #dedede;
     margin: 20px auto;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #AA86BA;
 }
 
 /* Navigation Bar */
@@ -350,6 +260,7 @@ p {
     justify-content: center;
     width: 100%;
     max-width: 900px;
+    background-color: transparent;
 }
 
 /* Individual Gallery Items */
@@ -357,7 +268,10 @@ p {
     text-align: center;
     background: white;
     padding: 10px;
-    border-radius: 10px;
+    width: 225px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #AA86BA;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -371,19 +285,23 @@ p {
 .gallery-img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #AA86BA;
 }
 
 /* Description Text */
 .description {
-    font-family: 'CustomFont1', sans-serif;
-    font-size: 12px;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 14px;
     background-color: white;
     padding: 10px;
     text-align: center;
+    color: #51335e;
 }
 
 /* Lightbox for Enlarged Images */
