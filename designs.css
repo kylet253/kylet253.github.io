@@ -137,6 +137,19 @@ a {
     display: flex;
     flex-direction: column;
 }
+.title{
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 28px;
+    color: #c4549d;
+    text-align: center;
+    background: linear-gradient(#fcedf1, #fcd4dc);
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px #dedede;
+    margin: 20px auto;
+}
 
 /*misc box*/
 .misc {
@@ -331,7 +344,6 @@ p {
     justify-content: center;
     width: 100%;
     max-width: 900px;
-    margin-top: 20px;
 }
 
 /* Individual Gallery Items */
