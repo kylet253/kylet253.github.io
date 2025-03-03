@@ -34,34 +34,11 @@ body
 .header {
     height: 205px;
     background-image: url('Untitled_design_4.jpg');
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 }
 /*updates box*/
-.updates {
-  
-    height: 200px;
-    background-color: white;
-    background-image: url('side_backs.jpg');
-    width: 210px;
-    border-width: 1px;
-    border-color: #AA86BA;
-    border-style: solid;
-    margin-left: 0px;
-    margin-top: 5px;
-    box-shadow: 2px 2px 8px #dedede;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 5px;
-    
-    
-}
-/*updates box title*/
-.updates-text {
-    font-family: 'CustomFont1';
-    font-size: 10px;
-    text-align: center;
-    margin-top: -40px;
-    color: #744987;
-}
+
     /*directory box*/
 .directory {
     background-image: url('side_backs.jpg');
@@ -72,7 +49,7 @@ body
     border-color: #AA86BA;
     border-style: solid;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
     box-shadow: 2px 2px 8px #dedede;
     outline-style: solid;
     outline-color: #fce3f9;
@@ -118,7 +95,7 @@ a {
     width: 538px;
     float: right;
     margin-right: 260px;
-    margin-top: -646px;
+    margin-top: -192px;
     border-width: 1px;
     border-color: #AA86BA;
     border-style: solid;
@@ -129,101 +106,7 @@ a {
     
 }
 
-/*misc box*/
-.misc {
-    background-image: url('side_backs.jpg');
-    height: 150px;
-    background-color: white;
-    width: 210px;
-    border-width: 1px;
-    border-color: #AA86BA;
-    border-style: solid;
-    margin-left: 0px;
-    margin-top: 10px;
-    box-shadow: 2px 2px 8px #dedede;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 5px;
-}
 
-/*misc box title*/
-.misc-text {
-    font-family: 'CustomFont1';
-    font-size: 10px;
-    text-align: center;
-    margin-top: -40px;
-    color: #744987;
-}
-
-/*music box*/
-.music {
-    background-image: url('side_backs.jpg');
-    background-color: white;
-    border-width: 1px;
-    border-color: #AA86BA;
-    border-style: solid;
-    box-shadow: 2px 2px 8px #dedede;
-    outline-style: solid;
-    outline-color: #fce3f9;
-    outline-width: 5px;
-    height: 300px;
-    width: 210px;
-    margin-top: -646px;
-    float: right;
-    margin-right: 0px;
-}
-/*music box title*/
-.music-text {
-    font-family: 'CustomFont1';
-    font-size: 10px;
-    text-align: center;
-    margin-top: -40px;
-    color: #744987;
-}
-
-/*audio stuff*/
-audio {
-    border: 0.5px solid #AA86BA;
-    border-radius: 30px;
-    width: 210px;
-    margin-top: 7px;
-    box-shadow: 2px 2px 8px #dedede;
-}
-audio::-webkit-media-controls-panel {
-    background-image: linear-gradient(#faedd9,#fae0b9);
-   
-}
-
-audio::-webkit-media-controls-play-button {
-    background-color:#fcd4dc;
-    border-radius: 50%;
-}
-
-    audio::-webkit-media-controls-play-button:hover {
-        background-color: #EEBDE9;
-    }
-
-audio::-webkit-media-controls-time-remaining-display {
-    color: black;
-    ;
-}
-
-/*the gif in the music box*/
-.music-image {
-    margin-top: 3px;
-    margin-left: -5px;
-    width: 210px;
-    height: 210px;
-    border: 5px solid #fcd4dc;
-    outline-color: #ffb6c1;
-    outline-style: solid;
-    outline-width: 1px;
-}
-
-
-.box main {
-    top: 0;
-}
 
 /*subheaders*/
 h3 {
@@ -284,3 +167,17 @@ p {
     line-height: 20px;
 }
 
+
+form label {
+    display: block;
+    margin-bottom: 3px; /* Space below labels */
+}
+
+form input {
+    display: block;
+    margin-bottom: 3px; /* Space below inputs */
+}
+
+form button {
+    margin-top: 3px; /* Space above button */
+}
