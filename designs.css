@@ -354,6 +354,8 @@ p {
     height: auto;
     border-radius: 10px;
     cursor: pointer;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 /* Description Text */
